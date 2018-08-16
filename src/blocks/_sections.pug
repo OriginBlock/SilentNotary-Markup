@@ -1,0 +1,4 @@
+mixin sections(act)
+    .sections
+        h2.sections__title Разделы панели
+        +menu(getData('menu-sections'), mod="sections", act=act).sections__menu

@@ -1,0 +1,95 @@
+.menu
+	display: flex
+	align-items: center
+	&__link
+		font-size: 16px
+		display: block
+		padding: 15px
+		border: none
+		background: none
+	&__text
+		border-bottom: 1px solid transparent
+		transition: all .4s
+	&_header &__link_active &__link-text,
+	&_header &__link:hover &__link-text
+		border-bottom: 1px solid $orange
+	&_sections
+		display: block
+	&_sections &__link
+		padding: 16px 0
+		padding-bottom: 17px
+		display: flex
+		align-items: center
+		font-size: 16px
+	&_sections &__ico
+		width: 43px
+		flex-grow: 0
+		flex-shrink: 0
+	&_sections &__text
+		position: relative
+		top: 3px
+		flex-grow: 1
+		flex-shrink: 1
+	&_sections &__chevron
+		flex-grow: 0
+		flex-shrink: 0
+		position: relative
+		top: 3px
+	&__submenu
+		margin-top: 6px
+		margin-bottom: 6px
+		display: none
+		&-link
+			display: block
+			font-size: 14px
+			padding: 10px 0
+			transition: all .2s
+			&:before
+				content: ''
+				display: block
+				background-color: $orange3
+				height: 1px
+				width: 20px
+				left: -24px
+				top: 50%
+				position: absolute
+				margin-top: -2px
+				opacity: 0
+				transition: all .8s
+			&_active,
+			&:hover
+				color: $orange3
+				position: relative
+				&:before
+					opacity: 1
+	&_sections &__link_open &__chevron
+		transform: rotate(180deg)
+	&_sections &__link_open + &__submenu
+		display: block
+	&_countries
+		display: block
+	&_countries &__form
+		display: block
+	&_countries &__link
+		display: block
+		font-size: 14px
+		padding: 10px 0
+		transition: all .2s
+		&:before
+			content: ''
+			display: block
+			background-color: $orange3
+			height: 1px
+			width: 20px
+			left: -24px
+			top: 50%
+			position: absolute
+			margin-top: -2px
+			opacity: 0
+			transition: all .8s
+	&_countries &__link:hover,
+	&_countries &__link_active
+		color: $orange3
+		position: relative
+		&:before
+			opacity: 1

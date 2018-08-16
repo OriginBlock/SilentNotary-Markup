@@ -1,0 +1,29 @@
+.pack-list
+	display: block
+	padding: 40px 0
+	&__item
+		border-bottom: 2px solid #e6e6e6
+		padding-bottom: 15px
+		margin-bottom: 15px
+	&__top
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		cursor: pointer
+	&__name
+		flex-grow: 1
+		flex-shrink: 1
+		font-size: 16px
+	&__chevron
+		flex-grow: 0
+		flex-shrink: 0
+	&__content
+		display: none
+	&__item_open &__content
+		display: block
+	&__chevron
+		display: flex
+		align-items: center
+	&__item_open &__chevron
+		.ico
+			transform: rotate(180deg)

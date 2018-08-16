@@ -1,0 +1,13 @@
+mixin user-panel()
+  +b.user-panel&attributes(attributes)
+    block
+    a.user-panel__notify(href="#")
+        .user-panel__notify-ico.ico.ico_notify
+            +icon('bell')
+    +e.user
+      +e.name
+        +e.name-form
+          +e("button").button(title="Перейти в профиль") Василий Петренко
+      +e.type
+        +e('form').type-form(actions="#")
+          +e("button").button Выйти

@@ -1,0 +1,20 @@
+extends ../../mixins/_layout
+
+
+append vars
+	- container = 'cols'
+	include ../../blocks/_sections
+	include ../../blocks/mail/_form-mail
+
+append styles
+	link(rel="stylesheet", type="text/css", href="mail/mail.css")
+
+block head
+	- var pageTitle = 'Создание mail шаблона | Наша Няня';
+
+block content
+	.container__col.container__col_side
+		+sections('Транзакции')
+	.container__col.container__col_content
+		h2.container__title Создание mail шаблона
+		+form-mail

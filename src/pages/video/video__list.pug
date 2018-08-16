@@ -1,0 +1,19 @@
+extends ../../mixins/_layout
+
+
+append vars
+	- container = 'cols'
+	include ../../blocks/_sections
+	include ../../blocks/video/_video-list
+
+append styles
+	link(rel="stylesheet", type="text/css", href="video/video.css")
+
+block head
+	- var pageTitle = 'Видео | Наша Няня';
+
+block content
+	.container__col.container__col_side
+		+sections('Видео')
+	.container__col.container__col_content
+		+video-list

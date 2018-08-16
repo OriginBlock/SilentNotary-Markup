@@ -1,0 +1,20 @@
+extends ../../mixins/_layout.pug
+
+
+append vars
+	- container = 'cols'
+	include ../../blocks/_sections.pug
+	include ../../blocks/blog/_blog-list.pug
+
+append styles
+	link(rel="stylesheet", type="text/css", href="blog/blog.css")
+
+block head
+	- var pageTitle = 'Список страниц блога | Наша Няня';
+
+block content
+	.container__col.container__col_side
+		+sections('Жалобы')
+	.container__col.container__col_content
+		+blog-list(getData('blog-list'))
+		+pager

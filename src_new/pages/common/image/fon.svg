@@ -1,0 +1,34 @@
+
+<svg width="677px" height="469px" viewBox="0 0 677 469" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-70.1386689%" y1="55.5667222%" x2="91.852449%" y2="55.5667222%" id="linearGradient-1">
+            <stop stop-color="#40CAFE" offset="0%"></stop>
+            <stop stop-color="#1E9AFC" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="609" height="399" rx="4"></rect>
+        <filter x="-9.4%" y="-11.7%" width="119.2%" height="129.3%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="1" dy="12" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="17.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.82745098   0 0 0 0 0.843137255   0 0 0 0 0.862745098  0 0 0 0.826171875 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Slient-Notary-1" transform="translate(-1243.000000, -123.000000)">
+            <g id="баланс" transform="translate(1277.000000, 146.000000)">
+                <g id="Oval-3">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <g id="Mask">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-2"></use>
+                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    </g>
+                    <circle stroke="#FFFFFF" stroke-width="68" opacity="0.172600446" mask="url(#mask-3)" cx="540.5" cy="398.5" r="88.5"></circle>
+                    <circle stroke="#1E9AFC" stroke-width="30" fill="#44ABFC" mask="url(#mask-3)" cx="603.5" cy="271.5" r="52.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

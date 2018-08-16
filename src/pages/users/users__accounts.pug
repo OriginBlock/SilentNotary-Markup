@@ -1,0 +1,22 @@
+extends ../../mixins/_layout.pug
+
+
+append vars
+	- container = 'cols'
+	include ../../blocks/_sections.pug
+	include ../../blocks/users/_users-list.pug
+
+append styles
+	link(rel="stylesheet", type="text/css", href="users/users.css")
+
+append scr
+	script(src='users/users.js')
+
+block head
+	- var pageTitle = 'Аккаунты | Наша Няня';
+
+block content
+	.container__col.container__col_side
+		+sections('Аккаунты')
+	.container__col.container__col_content
+		+users-list(getData('users-list'))

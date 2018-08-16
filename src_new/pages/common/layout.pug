@@ -1,0 +1,53 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    title &Lcy;&icy;&chcy;&ncy;&ycy;&jcy; &kcy;&acy;&bcy;&icy;&ncy;&iecy;&tcy; SilentNotary
+    link(rel='stylesheet' href='/common/libs/bootstrap/bootstrap-grid-3.3.1.min.css')
+    link(rel='stylesheet' href='/common/libs/select/jquery.formstyler.css')
+    link(rel='stylesheet' href='/common/libs/select/jquery.formstyler.theme.css')
+    link(rel='stylesheet' href='/common/css/style.css')
+    link(rel='stylesheet' href='/common/css/media.css')
+
+include ./includes/header
+
+main.main
+    // Sidebar
+    aside.sidebar
+        ul
+            li
+                a(href='#')
+                    span.item-img
+                        img(src='/common/image/home.svg' alt='На главную')
+                    span.item-menu &Gcy;&lcy;&acy;&vcy;&ncy;&acy;&yacy;
+            li
+                a(href='#')
+                    span.item-img
+                        img(src='/common/image/male.svg' alt='mail')
+                    span.item-menu &Pcy;&rcy;&ocy;&fcy;&icy;&lcy;&softcy;
+            li
+                a(href='#')
+                    span.item-img
+                        img(src='/common/image/wallet.svg' alt='wallet')
+                    span.item-menu &Icy;&scy;&tcy;&ocy;&rcy;&icy;&yacy; &tcy;&rcy;&acy;&ncy;&zcy;&acy;&kcy;&tscy;&icy;&jcy;
+            li
+                a(href='#')
+                    span.item-img
+                        img(src='/common/image/qesion.svg' alt='qesion')
+                    span.item-menu &Pcy;&ocy;&dcy;&dcy;&iecy;&rcy;&zhcy;&kcy;&acy;
+    // Sidebar end
+    // Title
+    .title-page
+        h1 &Zcy;&acy;&gcy;&rcy;&ucy;&zhcy;&iecy;&ncy;&ncy;&ycy;&iecy; &dcy;&ocy;&kcy;&ucy;&mcy;&iecy;&ncy;&tcy;&ycy;
+        #ifno-content.info
+            button#info-dock
+                img(src='/common/image/info.svg' alt='Информация')
+            .info-content.info1
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, saepe maiores quaerat pariatur assumenda aliquam dicta sequi in beatae omnis at voluptate, voluptates sed ipsam velit iure, quibusdam rerum alias.
+    .clear
+
+    block content
+
+script(src='/common/js/jquery.js')
+script(src='/common/libs/select/jquery.formstyler.js')
+script(src='/common/js/common.js')

@@ -1,0 +1,38 @@
+mixin message-list(data)
+	+b.message-list&attributes(attributes)(action="#")
+		block
+		if(data && data.length)
+			+e.table-wrap
+				+e.table-inner
+					+e('table').table
+						+e('thead').thead
+							+e('th').th_actions
+							+e('th').th_id ID
+							+e('th').th_date Дата
+							+e('th').th_sender Отправитель
+							+e('th').th Получатель / Сообщение
+						+e('tbody').tbody
+							each item, index in data
+								+e('tr').tr(class="message-list__tr_"+item.status)
+									+e('th').td_actions
+										+e('button').link_del
+											+icon('trash', false).message-list__link-ico
+										+e('button').link_edit
+											+icon('edit', false).message-list__link-ico
+										
+									+e('th').td_id #{item.user_id}
+									+e('th').td_date #{item.date}
+									+e('td').td_sender
+										+e.user
+											if (item.status != '')
+												+e('span').status.status.status_error
+											else
+												+e('span').status.status
+											+e.user-name #{item.sender}
+									+e('td').td_accepter
+										+e.user
+											+e('span').status.status
+											+e.user-name #{item.accepter}
+								+e('tr').tr
+									+e('td').td_spacer(colspan="4")
+									+e('td').td_message(colspan="2") #{item.message}

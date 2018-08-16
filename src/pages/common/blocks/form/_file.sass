@@ -1,0 +1,59 @@
+.file
+	height: 80px
+	display: flex
+	align-items: center
+	justify-content: center
+	border: 1px dashed $orange
+	position: relative
+	font-size: 16px
+	&__input
+		display: block
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		opacity: 0
+		z-index: 10
+		cursor: pointer
+		width: 100%
+	&__add
+		background: rgba(247, 113, 30, 0.2)
+		border-radius: 50%
+		width: 45px
+		height: 45px
+		position: absolute
+		left: 50%
+		top: 50%
+		margin-top: -22px
+		margin-left: -22px
+		text-align: center
+		line-height: 45px
+		.ico
+			width: 32px
+			height: 32px
+			display: block
+			color: $orange
+			margin: 0 auto
+			margin-top: 6px
+			svg
+				width: 32px
+				height: 32px
+				color: $orange
+	&__remove
+		display: block
+		position: absolute
+		right: 20px
+		top: 50%
+		margin-top: -12px
+		z-index: 99
+		transform: rotate(-45deg)
+		.ico
+			width: 28px
+			height: 28px
+			svg
+				width: 28px
+				height: 28px
+				color: $orange
+	+ .file
+		margin-top: 20px

@@ -1,0 +1,62 @@
+.checkbox
+	display: block
+	position: relative
+	overflow: hidden
+	cursor: pointer
+	font-size: 16px
+	&__input
+		display: none
+		// position: absolute
+		// left: -9999px
+		// top: -9999px
+	&__image
+		width: 28px
+		height: 6px
+		display: inline-block
+		vertical-align: middle
+		margin: 4px 0
+		border-radius: 50px
+		position: relative
+		z-index: 1
+		background-color: #e8e8e8
+	&__image:after
+		content: ''
+		display: block
+		width: 14px
+		height: 14px
+		background-color: #f7711e
+		box-shadow: 1px 2px 6px 0 rgba(0, 0, 0, 0.06)
+		border-radius: 50%
+		position: absolute
+		z-index: 2
+		top: 50%
+		margin-top: -7px
+		left: 0
+		transition: all .4s
+	&__input:checked + &__image
+		background-color: rgba(247, 113, 30, 0.5)
+	&__input:checked + &__image:after
+		left: auto
+		right: 0
+	&__text
+		margin-right: 30px
+	&_default &__image
+		width: 24px
+		height: 24px
+		margin: 0
+		margin-right: 12px
+		border-radius: 0
+		background: #fff
+		color: $orange
+		&:after
+			display: none
+		.ico_checkon
+			display: none
+	&_default &__input:checked + &__image
+		background-color: #fff
+		.ico_checkon
+			display: block
+		.ico_checkoff
+			display: none
+	&_default &__text
+		margin-right: 0

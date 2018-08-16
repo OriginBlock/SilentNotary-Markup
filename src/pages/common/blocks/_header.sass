@@ -1,0 +1,38 @@
+.header
+	display: block
+	position: fixed
+	left: 0
+	right: 0
+	top: 0
+	z-index: 1320
+	background-color: #fff
+	box-shadow: 0 2px 14px 0 rgba(0, 0, 0, .12)
+	&__container
+		display: flex
+		height: 53px
+		align-items: center
+		margin-bottom: 0
+	&__logo
+		+heavy
+		font-size: 18px
+		color: $orange
+		display: flex
+		flex-grow: 0
+		flex-shrink: 0
+		margin-right: 30px
+		align-items: center
+		&:before
+			display: block
+			content: ''
+			width: 46px
+			height: 46px
+			background: url('assets/img/logo.svg')
+	&__language
+		margin-right: 20px
+		cursor: pointer
+	&__menu
+		flex-grow: 1
+		flex-shrink: 1
+	&__user-panel
+		flex-grow: 0
+		flex-shrink: 0

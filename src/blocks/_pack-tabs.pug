@@ -1,0 +1,12 @@
+mixin pack-tabs()
+	+b.pack-tabs&attributes(attributes)
+		block
+		+e.title Пакеты
+		+e.links
+			+e('a').link_active(href="#") Текущие
+			+e('a').link(href="#") Шаблоны
+			+e('a').link(href="#") Архив
+		+e('a').add(href="#")
+			+e.add-ico.ico.ico_plus
+				+icon('plus-circle', false)
+			+e.add-text Добавить пакет

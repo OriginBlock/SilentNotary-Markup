@@ -1,0 +1,53 @@
+extends ../mixins/_layout.pug
+
+block head
+    - var pageTitle = 'Наша Няня Шаблоны Быкофиса';
+
+append styles
+    link(rel="stylesheet", type="text/css", href="index.css")
+
+block content
+    .page__list
+        ol
+            li
+                a(href="/account/Account__Login.html") Логин
+            li
+                a(href="/analytics/graph__index.html") Аналитика
+            li
+                a(href="/localization/localization__index.html") Локализация
+            li
+                a(href="/mail/mail__create.html") Создать шаблон Имейл
+            li
+                a(href="/mail/mail__templates.html") Список шаблонов Имейл
+            li
+                a(href="/payments/payments__index.html") Платежи
+            li
+                a(href="/tariffs/Tariffs__Index.html") Тарифы
+            li
+                a(href="/tariffs/Tariffs__CreatePackage.html") Тарифы: создание пакета
+            li
+                a(href="/tariffs/Tariffs__CreateTariff.html") Тарифы: создание тарифа
+            li
+                a(href="/users/users__accounts.html") Пользователи: аккаунты
+            li
+                a(href="/users/users__complaint.html") Пользователи: жалобы
+            li
+                a(href="/video/video__list.html") Видео: список
+            li
+                a(href="/video/video__add.html") Видео: добавление
+            li
+                a(href="/graph/graph__index.html") Статистика
+            li
+                a(href="/blog/blog__add.html") Блог. Добавление статьи
+            li
+                a(href="/blog/blog__list.html") Блог. Список статей
+            li
+                a(href="/temp/temp__list.html") Список для локализации
+            li
+                a(href="/moderation/moderation__ads.html") Модерация. Страница 1
+            li
+                a(href="/moderation/moderation__workers.html") Модерация. Страница 2
+            li
+                a(href="/settings/settings__ip.html") Заблокированные IP
+            li
+                a(href="/chat/chat__index.html") Чат

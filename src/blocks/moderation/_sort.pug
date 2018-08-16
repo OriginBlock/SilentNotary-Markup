@@ -1,0 +1,44 @@
+mixin sort(type)
+	+b.sort&attributes(attributes)
+		block
+		+e.top
+			+e('h2').title Данные для модерации
+			+e.buttons
+				if (type)
+					+e('a').button_active(href="#")
+						+e.button-text Работники
+					+e('a').button(href="#")
+						+e.button-text Объявления
+				else
+					+e('a').button(href="#")
+						+e.button-text Работники
+					+e('a').button_active(href="#")
+						+e.button-text Объявления
+		//- +e.bottom
+		//- 	+e.row.form__row
+		//- 		+e('label').label.form__label Статус
+		//- 		+e.input-wrapper.form__input-wrapper.form__input-wrapper_select
+		//- 			+e.input-icon.form__input-icon
+		//- 				+icon('arrows')
+		//- 			+e('select').select.form__select
+		//- 				+e('option').option(selected="selected") Не проверенные
+		//- 				+e('option').option Один
+		//- 				+e('option').option Два
+		//- 	+e.row.form__row
+		//- 		+e('label').label.form__label Сотрировка по
+		//- 		+e.input-wrapper.form__input-wrapper.form__input-wrapper_select
+		//- 			+e.input-icon.form__input-icon
+		//- 				+icon('arrows')
+		//- 			+e('select').select.form__select
+		//- 				+e('option').option(selected="selected") Дате дабовления
+		//- 				+e('option').option Один
+		//- 				+e('option').option Два
+		//- 	+e.row.form__row
+		//- 		+e('label').label.form__label Имеется фото
+		//- 		+e.input-wrapper.form__input-wrapper.form__input-wrapper_select
+		//- 			+e.input-icon.form__input-icon
+		//- 				+icon('arrows')
+		//- 			+e('select').select.form__select
+		//- 				+e('option').option(selected="selected") Да
+		//- 				+e('option').option Один
+		//- 				+e('option').option Два

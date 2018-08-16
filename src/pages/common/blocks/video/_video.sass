@@ -1,0 +1,83 @@
+.video-list
+	&__top
+		display: flex
+		background-color: #f7fbff
+		padding: 32px 40px
+		justify-content: space-between
+		align-items: center
+		margin-left: -40px
+		margin-right: -40px
+		margin-top: -32px
+		margin-bottom: 14px
+	&__title
+		font-size: 24px
+		font-weight: bold
+		margin-right: 25px
+		flex-grow: 0
+		flex-shrink: 0
+	&__filter
+		&-button
+			background: none
+			border: none
+			margin: 0
+			margin-left: auto
+			margin-right: 20px
+			.ico_filter
+				display: block
+				padding: 0
+				margin: 0
+	&__add
+		flex-grow: 0
+		flex-shrink: 0
+		font-size: 12px
+		display: flex
+		align-items: center
+		.ico
+			margin-right: 7px
+		&-text
+			position: relative
+			top: 2px
+	&__item
+		border-radius: 8px
+		overflow: hidden
+		background-color: #f7fbff
+		margin-bottom: 20px
+		display: flex
+		height: 160px
+		position: relative
+		font-size: 12px
+	&__img-wrap
+		flex-grow: 0
+		flex-shrink: 0
+		width: 250px
+		margin-right: 25px
+	&__img
+		display: block
+		width: 100%
+	&__item-content
+		flex-grow: 1
+		flex-shrink: 1
+		padding: 50px 0
+		padding-right: 200px
+	&__item-edit
+		position: absolute
+		right: 35px
+		top: 55px
+	&__item-remove
+		position: absolute
+		right: 35px
+		bottom: 55px
+	&__item-id
+		display: inline-block
+		vertical-align: middle
+		margin-right: 30px
+	&__item-date
+		display: inline-block
+		vertical-align: middle
+	&__item-link
+		padding-left: 50px
+		margin-top: 15px
+		max-width: 235px
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis

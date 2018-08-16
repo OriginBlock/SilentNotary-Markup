@@ -1,0 +1,4 @@
+mixin icon(iconName)
+	span.ico(class="ico_"+iconName)&attributes(attributes)
+		svg
+			use(xlink:href='/common/assets/img/icon.svg#icon_'+iconName)

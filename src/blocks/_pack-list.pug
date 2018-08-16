@@ -1,0 +1,45 @@
+include _pack-templates
+
+mixin pack-list()
+	+b.pack-list&attributes(attributes)
+		block
+		+e.item
+			+e.top
+				+e.name Название пакета 1 | Москва и Московская область | Без шаблона
+				+e.chevron
+					span.ico.ico_chevron
+						+icon('chevron-thin-down', false)
+			+e.content
+				+pack-templates.pack-list__templates
+		+e.item
+			+e.top
+				+e.name Название пакета 2 | Свердловская область | Шаблон №1
+				+e.chevron
+					span.ico.ico_chevron
+						+icon('chevron-thin-down', false)
+			+e.content
+				+pack-templates.pack-list__templates
+		+e.item_open
+			+e.top
+				+e.name Название пакета 3 | Мурманская область | Без шаблона
+				+e.chevron
+					span.ico.ico_chevron
+						+icon('chevron-thin-down', false)
+			+e.content
+				+pack-templates.pack-list__templates
+		+e.item
+			+e.top
+				+e.name Название пакета 1 | Москва и Московская область | Без шаблона
+				+e.chevron
+					span.ico.ico_chevron
+						+icon('chevron-thin-down', false)
+			+e.content
+				+pack-templates.pack-list__templates
+		+e.item
+			+e.top
+				+e.name Название пакета 2 | Свердловская область | Шаблон №1
+				+e.chevron
+					span.ico.ico_chevron
+						+icon('chevron-thin-down', false)
+			+e.content
+				+pack-templates.pack-list__templates

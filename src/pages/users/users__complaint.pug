@@ -1,0 +1,20 @@
+extends ../../mixins/_layout.pug
+
+
+append vars
+	- container = 'cols'
+	include ../../blocks/_sections.pug
+	include ../../blocks/users/_complaint-list.pug
+
+append styles
+	link(rel="stylesheet", type="text/css", href="users/users.css")
+
+block head
+	- var pageTitle = 'Жалобы | Наша Няня';
+
+block content
+	.container__col.container__col_side
+		+sections('Жалобы')
+	.container__col.container__col_content
+		+complaint-list(getData('complaint-list'))
+		+pager

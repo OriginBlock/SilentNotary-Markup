@@ -1,0 +1,32 @@
+mixin pager()
+    .pagination-container
+        ul.pagination
+            li.PagedList-skipToPrevious
+                a(href="#") <
+            li.active
+                span 1
+            li
+                a(href="#") 2
+            li
+                a(href="#") 3
+            li
+                a(href="#") 4
+            li
+                a(href="#") 5
+            li.PagedList-skipToNext
+                a(href="#") >
+    //- +b.pager&attributes(attributes)
+    //-     +e('a').item_prev(href="#")
+    //-         +icon('chevron-thin-down')
+    //-     +e('a').item_active(href="#") 1
+    //-     +e('a').item(href="#") 2
+    //-     +e('a').item(href="#") 3
+    //-     +e('a').item(href="#") 4
+    //-     +e('a').item(href="#") 5
+    //-     +e('a').item(href="#") 6
+    //-     +e('a').item(href="#") 7
+    //-     +e('a').item(href="#") 8
+    //-     +e('span').item ..
+    //-     +e('a').item(href="#") 25
+    //-     +e('a').item_next(href="#")
+    //-         +icon('chevron-thin-down')

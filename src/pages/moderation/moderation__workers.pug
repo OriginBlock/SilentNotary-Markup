@@ -1,0 +1,27 @@
+extends ../../mixins/_layout.pug
+
+
+append vars
+	- container = 'cols'
+	include ../../blocks/moderation/_filter.pug
+	include ../../blocks/moderation/_sort.pug
+	include ../../blocks/moderation/_moder-item.pug
+	include ../../blocks/_transactions.pug
+
+append styles
+	link(rel="stylesheet", type="text/css", href="moderation/moderation.css")
+
+append scr
+	script(src='moderation/moderation.js')
+
+block head
+	- var pageTitle = 'Модерация | Наша Няня';
+
+block content
+	.container__col.container__col_filter
+		+filter('worker')
+	.container__col.container__col_content.container__col_nobg
+		+sort('worker')
+		.sort__footer 1 - 15 из 13 500 Анкет
+		+moder-item('worker')
+		+moder-item('worker2')

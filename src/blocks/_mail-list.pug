@@ -1,0 +1,36 @@
+include form/_checkbox.pug
+
+mixin mail-list(data)
+	+b.mail-list&attributes(attributes)(action="#")
+		block
+		+e.top
+			+e.title Шаблоны mail рассылок
+			+e('button').filter-button
+				+icon('filter', false).mail-list__filter-button-ico
+			+e('a').add(href="#")
+				+e.add-ico.ico.ico_plus
+					+icon('plus-circle', false)
+				+e.add-text Добавить шаблон
+		if(data && data.length)
+			+e.table-wrap
+				+e('table').table
+					+e('thead').thead
+						+e('th').th ID
+						+e('th').th Название
+						+e('th').th Статус
+						+e('th').th Дата
+						+e('th').th
+					+e('tbody').tbody
+						each item, index in data
+							if item.class
+								- var cl = "mail-list__tr_"+item.class
+							+e('tr').tr(class=cl)
+								+e('td').td_id #{item.id}
+								+e('td').td_name #{item.name}
+								+e('td').td_status
+									+checkbox(item.status)
+								+e('td').td_date #{item.date}
+								+e('td').td_actions
+									+e('button').link_edit
+										+icon('edit', false).mail-list__link-ico
+								- cl = ''

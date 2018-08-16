@@ -1,0 +1,34 @@
+mixin video-list()
+	+b.video-list&attributes(attributes)
+		block
+		+e.top
+			+e.title Видео
+			+e('a').add(href="#")
+				+e.add-ico.ico.ico_plus
+					+icon('plus-circle', false)
+				+e.add-text Добавить видео
+		+e.list
+			+e.item
+				+e.img-wrap
+					+e('img').img(src="http://via.placeholder.com/250x160")
+				+e.item-content
+					+e.item-id ID: 289938
+					+e.item-date 28 - 11 - 17 (12:45)
+					+e.item-link
+						a(href="http://video.yandex.ru/external/46116860187966406") http://video.yandex.ru/external/46116860187966406...
+					+e('a').item-edit(href="#")
+						+icon('edit')
+					+e('a').item-remove(href="#")
+						+icon('trash')
+			+e.item
+				+e.img-wrap
+					+e('img').img(src="http://via.placeholder.com/250x160")
+				+e.item-content
+					+e.item-id ID: 289938
+					+e.item-date 28 - 11 - 17 (12:45)
+					+e.item-link
+						a(href="http://video.yandex.ru/external/46116860187966406") http://video.yandex.ru/external/46116860187966406...
+					+e('a').item-edit(href="#")
+						+icon('edit')
+					+e('a').item-remove(href="#")
+						+icon('trash')

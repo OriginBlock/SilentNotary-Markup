@@ -1,0 +1,239 @@
+include ../form/_checkbox.pug
+
+mixin filter(type)
+	+b('form').filter&attributes(attributes)(action="#")
+		block
+		if (!type)
+			+e('h2').title Фильтры
+			+e.inner
+				+e.row.form__row
+					+e('label').label.form__label Тип вакансии
+					+e.input-wrapper.form__input-wrapper.form__input-wrapper_select
+						+e.input-icon.form__input-icon
+							+icon('arrows')
+						+e('select').select.form__select
+							+e('option').option(selected="selected") Няни
+							+e('option').option Один
+							+e('option').option Два
+				+e.row.form__row
+					+e('label').label.form__label Поиск по ID Работника
+					+e.input-wrapper.form__input-wrapper
+						+e('input').input.form__input(type="text", placeholder="Введите ID")
+						+e('span').status.form__status
+				+e.row.form__row
+					+e('label').label.form__label Поиск по ID Вакансии
+					+e.input-wrapper.form__input-wrapper
+						+e('input').input.form__input(type="text", placeholder="Введите ID")
+						+e('span').status.form__status
+				+e.row.form__row
+					+e('label').label.form__label Поиск по телефону
+					+e.input-wrapper.form__input-wrapper
+						+e('input').input.form__input(type="text", placeholder="Введите телефон")
+						+e('span').status.form__status
+				+e.row.form__row
+					+e('label').label.form__label Поиск по тексту
+					+e.input-wrapper.form__input-wrapper
+						+e('input').input.form__input(type="text", placeholder="Введите название")
+						+e('span').status.form__status
+				+e.row.form__row
+					+e('label').label.form__label Город
+					+e.input-wrapper.form__input-wrapper.form__input-wrapper_select
+						+e.input-icon.form__input-icon
+							+icon('arrows')
+						+e('select').select.form__select
+							+e('option').option Введите город
+							+e('option').option Иркутская область
+							+e('option').option Анапа
+				+e.row.form__row
+					+e('label').label.form__label Проживание
+					+e.input-wrapper.form__input-wrapper.form__input-wrapper_select
+						+e.input-icon.form__input-icon
+							+icon('arrows')
+						+e('select').select.form__select
+							+e('option').option(selected="selected") С и БЕЗ
+							+e('option').option Один
+							+e('option').option Два
+				+e.row.form__row
+					+e('label').label.form__label Тип подписки
+					+e.input-wrapper.form__input-wrapper.form__input-wrapper_select
+						+e.input-icon.form__input-icon
+							+icon('arrows')
+						+e('select').select.form__select
+							+e('option').option(selected="selected") Все
+							+e('option').option Один
+							+e('option').option Два
+				+e.row.form__row
+					+checkbox(true, 'Active', true)
+				+e.row.form__row
+					+checkbox(true, 'Нет описания', true)
+				+e.row.form__row
+					+checkbox(true, 'Без фото', true)
+				+e.footer.form__footer
+					+e('button').button_submit.form__button_link Сбросить
+					+e('button').button_submit.form__button_submit.form__button_orange Применить
+				.sort__bottom
+					.sort__row.form__row
+						label.sort__label.form__label
+							| Статус
+						.sort__input-wrapper.form__input-wrapper.form__input-wrapper.form__input-wrapper_select
+							.sort__input-icon.form__input-icon
+								span.ico.ico_arrows
+									svg
+										use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='/bundles/common/assets/img/icon.svg#icon_arrows')
+							select#SortStatus.form-tariff__select.form__select(name='SortStatus')
+								option(disabled='', selected='') Выберите..
+								option(value='0') Не проверенные
+								option(selected='selected', value='1') Проверенные
+								option(value='2') Отклоненные
+					.sort__row.form__row
+						label.sort__label.form__label
+							| Сотрировка по
+						.sort__input-wrapper.form__input-wrapper.form__input-wrapper.form__input-wrapper_select
+							.sort__input-icon.form__input-icon
+								span.ico.ico_arrows
+									svg
+										use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='/bundles/common/assets/img/icon.svg#icon_arrows')
+							select#SortDate.form-tariff__select.form__select(name='SortDate')
+								option(disabled='', selected='') Выберите..
+								option(value='0') Дата обновления | От старых к новым
+								option(value='1') Дата обновления | От новых к старым
+								option(selected='selected', value='2') Дата создания | От старых к новым
+								option(value='3') Дата создания | От новых к старым
+					.sort__row.form__row
+						label.sort__label.form__label
+							| Имеется фото
+						.sort__input-wrapper.form__input-wrapper.form__input-wrapper.form__input-wrapper_select
+							.sort__input-icon.form__input-icon
+								span.ico.ico_arrows
+									svg
+										use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='/bundles/common/assets/img/icon.svg#icon_arrows')
+							select#SortPhoto.form-tariff__select.form__select(name='SortPhoto')
+								option(disabled='', selected='') Выберите..
+								option(value='0') Сначала с фото
+								option(value='1') Сначала без фото
+					.sort__row.form__row
+						+e('button').button_submit.form__button_submit.form__button_orange Применить
+
+		else
+			+e('h2').title Фильтры
+			+e.inner
+				+e.row.form__row
+					+e('label').label.form__label Тип работника
+					+e.input-wrapper.form__input-wrapper.form__input-wrapper_select
+						+e.input-icon.form__input-icon
+							+icon('arrows')
+						+e('select').select.form__select
+							+e('option').option(selected="selected") Няни
+							+e('option').option Один
+							+e('option').option Два
+				+e.row.form__row
+					+e('label').label.form__label Поиск по ID Работника
+					+e.input-wrapper.form__input-wrapper
+						+e('input').input.form__input(type="text", placeholder="Введите ID")
+						+e('span').status.form__status
+				+e.row.form__row
+					+e('label').label.form__label Поиск по ID Анкеты
+					+e.input-wrapper.form__input-wrapper
+						+e('input').input.form__input(type="text", placeholder="Введите ID")
+						+e('span').status.form__status
+				+e.row.form__row
+					+e('label').label.form__label Поиск по телефону
+					+e.input-wrapper.form__input-wrapper
+						+e('input').input.form__input(type="text", placeholder="Введите телефон")
+						+e('span').status.form__status
+				+e.row.form__row
+					+e('label').label.form__label Поиск по тексту
+					+e.input-wrapper.form__input-wrapper
+						+e('input').input.form__input(type="text", placeholder="Введите название")
+						+e('span').status.form__status
+				+e.row.form__row
+					+e('label').label.form__label Поиск по платежной почте
+					+e.input-wrapper.form__input-wrapper
+						+e('input').input.form__input(type="text", placeholder="Введите почту из platron")
+						+e('span').status.form__status
+				+e.row.form__row
+					+e('label').label.form__label Город
+					+e.input-wrapper.form__input-wrapper.form__input-wrapper_select
+						+e.input-icon.form__input-icon
+							+icon('arrows')
+						+e('select').select.form__select
+							+e('option').option Введите город
+							+e('option').option Иркутская область
+							+e('option').option Анапа
+				+e.row.form__row
+					+e('label').label.form__label Проживание
+					+e.input-wrapper.form__input-wrapper.form__input-wrapper_select
+						+e.input-icon.form__input-icon
+							+icon('arrows')
+						+e('select').select.form__select
+							+e('option').option(selected="selected") С и БЕЗ
+							+e('option').option Один
+							+e('option').option Два
+				+e.row.form__row
+					+e('label').label.form__label Тип подписки
+					+e.input-wrapper.form__input-wrapper.form__input-wrapper_select
+						+e.input-icon.form__input-icon
+							+icon('arrows')
+						+e('select').select.form__select
+							+e('option').option(selected="selected") Все
+							+e('option').option Один
+							+e('option').option Два
+				+e.row.form__row
+					+checkbox(true, 'Active', true)
+				+e.row.form__row
+					+checkbox(true, 'Есть описание', true)
+				+e.row.form__row
+					+checkbox(true, 'Неправильный E-mail', true)
+				+e.row.form__row
+					+checkbox(true, 'Неправильный телефон', true)
+				+e.row.form__row
+					+checkbox(true, 'Нет адреса', true)
+				+e.row.form__row
+					+checkbox(true, 'Без фото', true)
+				+e.row.form__row
+					+checkbox(true, 'Нелегальные строки', true)
+				+e.footer.form__footer
+					+e('button').button_submit.form__button_link Сбросить
+					+e('button').button_submit.form__button_submit.form__button_orange Применить
+				.sort__bottom
+					.sort__row.form__row
+						label.sort__label.form__label
+							| Статус
+						.sort__input-wrapper.form__input-wrapper.form__input-wrapper.form__input-wrapper_select
+							.sort__input-icon.form__input-icon
+								span.ico.ico_arrows
+									svg
+										use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='/bundles/common/assets/img/icon.svg#icon_arrows')
+							select#SortStatus.form-tariff__select.form__select(name='SortStatus')
+								option(disabled='', selected='') Выберите..
+								option(value='0') Не проверенные
+								option(selected='selected', value='1') Проверенные
+								option(value='2') Отклоненные
+					.sort__row.form__row
+						label.sort__label.form__label
+							| Сотрировка по
+						.sort__input-wrapper.form__input-wrapper.form__input-wrapper.form__input-wrapper_select
+							.sort__input-icon.form__input-icon
+								span.ico.ico_arrows
+									svg
+										use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='/bundles/common/assets/img/icon.svg#icon_arrows')
+							select#SortDate.form-tariff__select.form__select(name='SortDate')
+								option(disabled='', selected='') Выберите..
+								option(value='0') Дата обновления | От старых к новым
+								option(value='1') Дата обновления | От новых к старым
+								option(selected='selected', value='2') Дата создания | От старых к новым
+								option(value='3') Дата создания | От новых к старым
+					.sort__row.form__row
+						label.sort__label.form__label
+							| Имеется фото
+						.sort__input-wrapper.form__input-wrapper.form__input-wrapper.form__input-wrapper_select
+							.sort__input-icon.form__input-icon
+								span.ico.ico_arrows
+									svg
+										use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='/bundles/common/assets/img/icon.svg#icon_arrows')
+							select#SortPhoto.form-tariff__select.form__select(name='SortPhoto')
+								option(disabled='', selected='') Выберите..
+								option(value='0') Сначала с фото
+								option(value='1') Сначала без фото
+					.sort__row.form__row
+						+e('button').button_submit.form__button_submit.form__button_orange Применить

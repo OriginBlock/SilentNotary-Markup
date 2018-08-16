@@ -1,0 +1,15 @@
+[
+  {
+    "title": "Управление",
+    "class": "menu__link_active",
+    "url": "#"
+  },
+  {
+    "title": "Локализации",
+    "url": "#"
+  },
+  {
+    "title": "Аналитика",
+    "url": "/graph/graph__index.html"
+  }
+]

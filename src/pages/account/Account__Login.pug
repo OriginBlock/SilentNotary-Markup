@@ -1,0 +1,34 @@
+extends ../../mixins/_layout.pug
+
+append vars
+	- container = 'home'
+
+block head
+	- var pageTitle = 'Логин | Наша Няня ';
+
+append styles
+	link(rel="stylesheet", type="text/css", href="account/account.css")
+
+block content
+	.form-login
+		.form-login__title
+			span.form-login__blue Админ
+			span.form-login__orange Наша Няня
+		.form-login__row.form__row
+			label.form-login__label.form__label Ваша почта
+			.form-login__input-wrapper.form__input-wrapper
+				input.form-login__input.form__input(type="text", placeholder="Этот инпут не нужен в верстке, здесь чтобы показать как выглядит поле без валидации")
+				span.form-login__status.form__status
+		.form-login__row.form-login__row_success.form__row.form__row_success
+			label.form-login__label.form__label Ваша почта
+			.form-login__input-wrapper.form__input-wrapper
+				input.form-login__input.form__input(type="text", placeholder="Введите присланный вам по почте")
+				span.form-login__status_success.form__status_success
+		.form-login__row.form-login__row_error.form__row.form__row_error
+			label.form-login__label.form__label Ваша пароль
+			.form-login__input-wrapper.form__input-wrapper
+				input.form-login__input.form__input(type="password", placeholder="Введите присланный вам по почте")
+				span.form-login__status_error.form__status_error
+		.form-login__footer.form__footer
+			button.form-login__button.form-login__button_submit.form__button.form__button_submit Войти
+			button.form-login__button.form-login__button_link.form__button.form__button_link Написать в техподдержку

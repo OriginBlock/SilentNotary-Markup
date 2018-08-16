@@ -1,0 +1,42 @@
+.pack-templates
+	display: block
+	&__table
+		width: 100%
+		margin-top: 15px
+	&__td,
+	&__th
+		padding: 5px 12px
+		padding-top: 6px
+		&:last-child
+			text-align: right
+	&__th
+		text-transform: uppercase
+		font-weight: bold
+		text-align: left
+		padding-bottom: 10px
+		font-size: 12px
+	&__tr:nth-child(odd) &__td
+		background-color: rgba(242, 242, 242, .67)
+	&__tr:nth-child(even) &__td
+		padding-top: 12px
+		padding-bottom: 12px
+	&__remove
+		display: inline-block
+		vertical-align: middle
+		background: none
+		border: none
+		padding: 0
+		margin: 0
+		.ico
+			display: block
+	&__add
+		font-size: 12px
+		text-transform: none
+		font-weight: normal
+		&-ico
+			display: inline-block
+			vertical-align: middle
+			margin-right: 5px
+		&-text
+			position: relative
+			top: 2px

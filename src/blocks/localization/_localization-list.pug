@@ -1,0 +1,58 @@
+mixin localization-list()
+	+b('form').localization-list&attributes(attributes)(action="#")
+		block
+		+e.top
+			+e.title Введите нужные значения
+			+e('button').open.button
+				.button__text.button__text_on Открыть все
+				.button__text.button__text_off Закрыть все
+			+e('button').save.button.button_orange Сохранить
+		+e.content
+			+e('h6').subtitle Разделы
+			+e.list
+				- var itms = ['Страница няни', 'Поиск', 'Dashboard', 'Страница няни', 'Поиск', 'Dashboard']
+				each val, index in itms
+					+e.list-item
+						+e.list-title= val
+						+e.list-content
+							+e('table').list-table
+								+e('tr').list-tr
+									+e('td').list-td title_profile_of_worker
+									+e('td').list-td
+										+e('form').list-form
+											+e('input').input(type="text", value="Десятки прекрасных вакансий - всего в трех шагах от вас!")
+								+e('tr').list-tr
+									+e('td').list-td lbl_work_condition_comfort
+									+e('td').list-td
+										+e('form').list-form
+											+e('input').input(type="text", value="Кем вы хотите работать?")
+								+e('tr').list-tr
+									+e('td').list-td title_profile_of_worker
+									+e('td').list-td
+										+e('form').list-form
+											+e('input').input(type="text", value="Десятки прекрасных вакансий - всего в трех шагах от вас!")
+								+e('tr').list-tr
+									+e('td').list-td lbl_work_condition_comfort
+									+e('td').list-td
+										+e('form').list-form
+											+e('input').input(type="text", value="Кем вы хотите работать?")
+								+e('tr').list-tr
+									+e('td').list-td title_profile_of_worker
+									+e('td').list-td
+										+e('form').list-form
+											+e('input').input(type="text", value="Десятки прекрасных вакансий - всего в трех шагах от вас!")
+								+e('tr').list-tr
+									+e('td').list-td lbl_work_condition_comfort
+									+e('td').list-td
+										+e('form').list-form
+											+e('input').input(type="text", value="Кем вы хотите работать?")
+								+e('tr').list-tr
+									+e('td').list-td title_profile_of_worker
+									+e('td').list-td
+										+e('form').list-form
+											+e('input').input(type="text", value="Десятки прекрасных вакансий - всего в трех шагах от вас!")
+								+e('tr').list-tr
+									+e('td').list-td lbl_work_condition_comfort
+									+e('td').list-td
+										+e('form').list-form
+											+e('input').input(type="text", value="Кем вы хотите работать?")

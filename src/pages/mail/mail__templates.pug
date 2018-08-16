@@ -1,0 +1,20 @@
+extends ../../mixins/_layout.pug
+
+
+append vars
+	- container = 'cols'
+	include ../../blocks/_sections.pug
+	include ../../blocks/_mail-list.pug
+
+append styles
+	link(rel="stylesheet", type="text/css", href="mail/mail.css")
+
+block head
+	- var pageTitle = 'Шаблоны mail рассылок | Наша Няня';
+
+block content
+	.container__col.container__col_side
+		+sections('Шаблоны mail рассылок')
+	.container__col.container__col_content
+		+mail-list(getData('mail-list'))
+		+pager

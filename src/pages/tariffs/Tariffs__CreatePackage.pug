@@ -1,0 +1,17 @@
+extends ../../mixins/_layout
+
+
+append vars
+	- container = 'cols'
+	include ../../blocks/_sections
+	include ../../blocks/_form-pack
+
+block head
+	- var pageTitle = 'Создать пакет | Наша Няня';
+
+block content
+	.container__col.container__col_side
+		+sections('Транзакции')
+	.container__col.container__col_content
+		h2.container__title Создание пакета
+		+form-pack

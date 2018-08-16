@@ -1,0 +1,22 @@
+extends ../../mixins/_layout.pug
+
+
+append vars
+	- container = 'cols'
+	include ../../blocks/_sections-countries.pug
+	include ../../blocks/localization/_localization-list.pug
+
+append styles
+	link(rel="stylesheet", type="text/css", href="localization/localization.css")
+
+append scr
+	script(src='localization/localization.js')
+
+block head
+	- var pageTitle = 'Шаблоны mail рассылок | Наша Няня';
+
+block content
+	.container__col.container__col_side
+		+sections-countries('Россия')
+	.container__col.container__col_content
+		+localization-list(getData('complaint-list'))

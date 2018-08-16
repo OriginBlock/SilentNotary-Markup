@@ -1,0 +1,20 @@
+extends ../../mixins/_layout.pug
+
+
+append vars
+	- container = 'cols'
+	include ../../blocks/_sections.pug
+	include ../../blocks/_transactions.pug
+
+append styles
+	link(rel="stylesheet", type="text/css", href="payments/payments.css")
+
+block head
+	- var pageTitle = 'Пакеты | Наша Няня';
+
+block content
+	.container__col.container__col_side
+		+sections('Транзакции')
+	.container__col.container__col_content
+		+transactions(getData('transactions'))
+		+pager

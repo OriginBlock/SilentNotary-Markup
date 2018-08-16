@@ -1,0 +1,31 @@
+mixin docs(type)
+	+b.docs&attributes(attributes)
+		block
+		+e.label Документы
+		+e.item
+			+e.img-wrap
+				+e('img').img(src="/common/assets/img/formats/jpg.svg")
+			+e.title Название название
+			+e.links
+				+e('a').link_show.docs__link_active(href="#")
+					+icon('show')
+				+e('a').link_remove(href="#")
+					+icon('block')
+		+e.item
+			+e.img-wrap
+				+e('img').img(src="/common/assets/img/formats/pdf.svg")
+			+e.title Название название
+			+e.links
+				+e('a').link_show(href="#")
+					+icon('show')
+				+e('a').link_remove.docs__link_active(href="#")
+					+icon('block')
+		+e.item
+			+e.img-wrap
+				+e('img').img(src="/common/assets/img/formats/png.svg")
+			+e.title Название название
+			+e.links
+				+e('a').link_show.docs__link_active(href="#")
+					+icon('show')
+				+e('a').link_remove(href="#")
+					+icon('block')

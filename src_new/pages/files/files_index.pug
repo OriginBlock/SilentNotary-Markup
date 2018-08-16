@@ -1,0 +1,136 @@
+extends ../common/layout
+
+block content
+    .content-block
+        .tablenav
+            .left-tablenav
+                .block-tablenav
+                    span.title-tablenav &Pcy;&ocy;&kcy;&acy;&zcy;&acy;&tcy;&softcy; &pcy;&ocy;
+                    form.inline(action='#')
+                        select
+                            option 5
+                            option 10
+                            option 20
+                            option 30
+                .block-tablenav
+                    span.title-tablenav &Zcy;&acy; &pcy;&iecy;&rcy;&icy;&ocy;&dcy;
+                    form.inline.time(action='#')
+                        select
+                            option &Vcy;&scy;&iecy; &vcy;&rcy;&iecy;&mcy;&yacy;
+                            option &Dcy;&iecy;&ncy;&softcy;
+                            option &Ncy;&iecy;&dcy;&iecy;&lcy;&yacy;
+                            option &Mcy;&iecy;&scy;&yacy;&tscy;
+                            option &Gcy;&ocy;&dcy;
+                .block-tablenav
+                    .kalendar
+                        img.icon-kal(src='/common/image/kalendar.svg' alt='Календарь')
+            .right-tablenav
+                span.title-tablenav &Vcy;&ycy;&bcy;&rcy;&acy;&ncy;&ncy;&ycy;&iecy;:
+                button
+                    img(src='/common/image/dock.svg' alt='')
+                    | &Scy;&kcy;&acy;&chcy;&acy;&tcy;&softcy;
+                button
+                    img(src='/common/image/delet.svg' alt='')
+                    | &Ucy;&dcy;&acy;&lcy;&icy;&tcy;&softcy;
+        .clear
+        .widefat
+            .top-table
+                ul
+                    li.curent
+                        a(href='#')
+                            | &Ncy;&acy;&zcy;&vcy;&acy;&ncy;&icy;&iecy;
+                            img(src='/common/image/caret.svg' alt='Стрелка вниз')
+                    li.curent
+                        a(href='#')
+                            | &Dcy;&acy;&tcy;&acy;
+                            br
+                            |  &zcy;&acy;&gcy;&rcy;&ucy;&zcy;&kcy;&icy;
+                            img(src='/common/image/caret.svg' alt='Стрелка вниз')
+                    li
+                        a(href='#')
+                            | &Scy;&rcy;&ocy;&kcy;
+                            br
+                            |  &khcy;&rcy;&acy;&ncy;&iecy;&ncy;&icy;&yacy;
+                    li.curent
+                        a(href='#')
+                            | &Rcy;&acy;&zcy;&mcy;&iecy;&rcy;
+                            img(src='/common/image/caret.svg' alt='Стрелка вниз')
+                    li
+                        a(href='#') &Kcy;&ocy;&mcy;&mcy;&iecy;&ncy;&tcy;&acy;&rcy;&icy;&jcy;
+                    li
+                        a(href='#') &Ocy;&pcy;&tscy;&icy;&icy;
+            .dock-file
+                label.checkbox
+                    input(type='checkbox')
+                    span
+                .item-dock Document.docx
+                .item-dock
+                    span.date-dock 01.08.18
+                    span.time-dock 14:45
+                .item-dock
+                    span.date-dock 01.08.18
+                    span.time-dock 14:45
+                .item-dock
+                    span 80 &kcy;&Bcy;
+                .item-dock
+                    span
+                        | &Vcy;&ycy;&pcy;&icy;&scy;&kcy;&acy; &icy;&zcy; &IEcy;&Gcy;&Rcy;&Pcy; (&IEcy;&Gcy;&Rcy;&Ncy;) &ncy;&acy; &kcy;&vcy;&acy;&rcy;&tcy;&icy;&rcy;&ucy;, &kcy;&ocy;&tcy;&ocy;&rcy;&ycy;&jcy; &pcy;&ocy;&dcy;&tcy;&vcy;&iecy;&rcy;&zhcy;&dcy;&acy;&iecy;&tcy; &kcy;&tcy;&ocy; &yacy;&vcy;&lcy;&yacy;&iecy;&tcy;&softcy;&scy;&yacy; &scy;&ocy;&bcy;&scy;&tcy;&vcy;&iecy;&ncy;&ncy;&icy;&kcy;&ocy;&mcy; &kcy;&vcy;&acy;&rcy;&tcy;&icy;&rcy;&ycy;&mldr;
+                .item-dock
+                    .options
+                        button
+                            img(src='/common/image/delet.svg' alt='')
+                        button
+                            img(src='/common/image/dock.svg' alt='')
+            .dock-file
+                label.checkbox
+                    input(type='checkbox')
+                    span
+                .item-dock Document.docx
+                .item-dock
+                    span.date-dock 01.08.18
+                    span.time-dock 14:45
+                .item-dock
+                    span.date-dock 01.08.18
+                    span.time-dock 14:45
+                .item-dock
+                    span 80 &kcy;&Bcy;
+                .item-dock
+                    span
+                        | &Vcy;&ycy;&pcy;&icy;&scy;&kcy;&acy; &icy;&zcy; &IEcy;&Gcy;&Rcy;&Pcy; (&IEcy;&Gcy;&Rcy;&Ncy;) &ncy;&acy; &kcy;&vcy;&acy;&rcy;&tcy;&icy;&rcy;&ucy;, &kcy;&ocy;&tcy;&ocy;&rcy;&ycy;&jcy; &pcy;&ocy;&dcy;&tcy;&vcy;&iecy;&rcy;&zhcy;&dcy;&acy;&iecy;&tcy; &kcy;&tcy;&ocy; &yacy;&vcy;&lcy;&yacy;&iecy;&tcy;&softcy;&scy;&yacy; &scy;&ocy;&bcy;&scy;&tcy;&vcy;&iecy;&ncy;&ncy;&icy;&kcy;&ocy;&mcy; &kcy;&vcy;&acy;&rcy;&tcy;&icy;&rcy;&ycy;&mldr;
+                .item-dock
+                    .options
+                        button
+                            img(src='/common/image/delet.svg' alt='')
+                        button
+                            img(src='/common/image/dock.svg' alt='')
+
+    .block-right
+        .block-padding
+            .balance
+                .head-balance
+                    h3 &Bcy;&acy;&lcy;&acy;&ncy;&scy; &scy;&chcy;&iecy;&tcy;&acy;
+                    #info-balance.info
+                        button#info-dock2
+                            img(src='/common/image/info-white.svg' alt='Информация')
+                        .info-content.info2
+                            span
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, saepe maiores quaerat pariatur assumenda aliquam dicta sequi in beatae omnis at voluptate, voluptates sed ipsam velit iure, quibusdam rerum alias.
+                .block-balance
+                    span.price - $15
+                    .info-dock-balance
+                        span.date 25.07.2018
+                        span.title-dock Document.docx
+                .block-balance
+                    span.price - $450
+                    .info-dock-balance
+                        span.date 25.07.2018
+                        span.title-dock Document.docx
+                .text-center
+                    a.look.look-white(href='#') &Scy;&mcy;&ocy;&tcy;&rcy;&iecy;&tcy;&softcy; &vcy;&scy;&iecy;
+            .download-file
+                span
+                    | &Pcy;&iecy;&rcy;&iecy;&tcy;&acy;&shchcy;&icy;&tcy;&iecy; &fcy;&acy;&jcy;&lcy;&ycy; &scy;&yucy;&dcy;&acy;
+                    br
+                    |  &icy;&lcy;&icy;
+                .text-center
+                    a.look(href='#') &Vcy;&ycy;&bcy;&iecy;&rcy;&icy;&tcy;&iecy; &scy; &dcy;&icy;&scy;&kcy;&acy;

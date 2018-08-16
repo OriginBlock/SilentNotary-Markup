@@ -1,0 +1,46 @@
+include ../form/_checkbox.pug
+
+mixin ip-list(data)
+	+b.ip-list&attributes(attributes)(action="#")
+		block
+		+e.top
+			+e.title Заблокированные IP
+		+e.bottom
+			+e.row.form__row
+				+e('label').label.form__label Start IP
+				+e.input-wrapper.form__input-wrapper
+					+e('input').input.form__input(type="text", placeholder="IP")
+					+e('span').status.form__status
+			+e.row.form__row
+				+e('label').label.form__label End IP
+				+e.input-wrapper.form__input-wrapper
+					+e('input').input.form__input(type="text", placeholder="IP")
+					+e('span').status.form__status
+			+e.row.form__row
+				+e('label').label.form__label Comment
+				+e.input-wrapper.form__input-wrapper
+					+e('input').input.form__input(type="text", placeholder="IP")
+					+e('span').status.form__status
+			+e.row.form__row
+				+e('button').add.button.button_orange +ADD
+		if(data && data.length)
+			+e.table-wrap
+				+e('table').table
+					+e('thead').thead
+						+e('th').th ID
+						+e('th').th Start IP
+						+e('th').th End IP
+						+e('th').th Comments
+						+e('th').th СТАТУС
+						+e('th').th ДАТА
+					+e('tbody').tbody
+						each item, index in data
+							+e('tr').tr
+								+e('td').td_id #{item.id}
+								+e('td').td_ip #{item.startip}
+								+e('td').td_ip #{item.endip}
+								+e('td').td_comment
+									+e.comment #{item.comment}
+								+e('td').td_status
+									+checkbox(item.status)
+								+e('td').td_date #{item.date}
