@@ -1,0 +1,380 @@
+/*==========  Desktop First Method  ==========
+
+/* Large Devices, Wide Screens
+@media only screen and (max-width: 1460px)
+    input.picker
+        width: 220px
+    .block-tablenav
+        margin-left: 15px
+
+/* Large Devices, Wide Screens
+@media only screen and (max-width: 1440px)
+    span
+        &.date-dock, &.time-dock
+            display: block
+            margin-right: 0
+    .top-table
+        ul li
+            &:nth-of-type(2)
+                width: 13%
+            &:nth-of-type(3)
+                width: 12%
+        padding-left: 40px
+    .dock-file
+        padding-left: 40px
+    label.checkbox
+        left: 12px
+    .dock-file .item-dock-6 .item-dock:nth-of-type(2)
+        width: 44%
+    .item-dock-6
+        width: 30%
+    .dock-file .item-dock:nth-of-type(2)
+        width: 12%
+    .top-table ul li
+        &:nth-of-type(1)
+            width: 17%
+        &:nth-of-type(6)
+            width: 8%
+    .dock-file .item-dock:nth-of-type(5)
+        width: 10%
+    .top-table ul li:nth-of-type(5)
+        width: 37%
+    .dock-file
+        .item-dock:nth-of-type(4)
+            width: 35%
+        .item-dock-6 .item-dock:nth-of-type(1)
+            width: 56%
+
+/* Large Devices, Wide Screens
+@media only screen and (max-width: 1400px)
+    .right-tablenav.edit-dock
+        display: block
+        float: left
+    .left-tablenav
+        display: block
+        width: 100%
+
+/* Large Devices, Wide Screens
+@media only screen and (max-width: 1360px)
+    .block-head
+        margin-left: 30px
+
+/* Large Devices, Wide Screens
+@media only screen and (max-width: 1300px)
+    .content-block
+        width: 100%
+        margin-bottom: 30px
+    main.main
+        padding-right: 30px
+    .left-tablenav
+        display: inline-block
+        float: left
+        width: auto
+    .right-tablenav.edit-dock
+        display: inline-block
+        float: right
+    .block-padding
+        padding: 0
+    .block-right
+        width: 100%
+    img
+        &.logo-min
+            display: block
+        &.logo-big
+            display: none
+    .block-head
+        margin-left: 50px
+
+/* Large Devices, Wide Screens
+@media only screen and (max-width: 1200px)
+    .user-check
+        display: block
+        border-top: 1px solid #dbdcde
+        margin-top: 15px
+        padding: 10px 0
+    .head-check, .right-head .block-head:nth-of-type(2)
+        display: none
+    footer.site-footer ul li
+        margin-left: 30px
+
+/* Medium Devices, Desktops
+@media only screen and (max-width: 992px)
+    .block-head:first-of-type, .top-table
+        display: none
+    .dock-file
+        .item-dock:nth-of-type(5)
+            width: 12%
+        .item-dock-6 .item-dock
+            &:nth-of-type(2)
+                display: none
+            &:nth-of-type(1)
+                width: 100%
+        .item-dock
+            &:nth-of-type(2), &:nth-of-type(3)
+                display: none
+            &:nth-of-type(4)
+                width: 53%
+                padding-left: 15px
+    .item-dock-6
+        width: 35%
+    .hash
+        overflow-x: scroll
+    .mobile-item
+        margin-top: 15px
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    .item-dock-mobile
+        display: inline-block
+        span
+            display: inline-block
+            color: #858689
+            letter-spacing: 0.32px
+            font-size: 14px
+            &.title-mobile-item
+                color: #6a6a6a
+    .mobile-item .item-dock-mobile:last-of-type
+        margin-right: 0
+    .right-tablenav.edit-dock
+        width: 100%
+    footer.site-footer
+        text-align: center
+        line-height: 50px
+        padding: 15px 0
+    .hain
+        text-align: left
+    footer.site-footer
+        ul
+            li:first-of-type
+                margin-left: 0
+            text-align: center
+        .col-md-6 .col-md-6
+            width: 50%
+            float: left
+    .daterangepicker
+        &.ltr.show-calendar.opensright
+            left: 165px !important
+        &.opensright
+            &:before
+                right: 30px
+                left: auto
+            &:after
+                left: auto
+                right: 30px
+    .info-content.info1
+        top: 50px
+        left: -245px
+        right: auto
+        &:before
+            left: auto
+            border-left: 15px solid transparent
+            border-right: 15px solid transparent
+            border-bottom: 15px solid #2cb1fd
+            right: 30px
+            top: -30px
+
+/* Small Devices, Tablets
+@media only screen and (max-width: 760px)
+    .block-tablenav
+        margin-left: 0
+        width: 100%
+    .tablenav .block-tablenav:first-of-type
+        display: none
+    .mobile-item
+        border-top: 1px solid rgba(159, 163, 169, 0.38)
+        padding-top: 15px
+    .item-dock-mobile
+        width: 100%
+        text-align: left
+    .daterangepicker.opensright
+        &:before
+            right: 42%
+            left: auto
+        &:after
+            left: auto
+            right: 42%
+
+/* Small Devices, Tablets
+@media only screen and (max-width: 745px)
+    .options
+        text-align: center
+
+/* Small Devices, Tablets
+@media only screen and (max-width: 730px)
+    .block-head
+        margin-left: 30px
+
+/* Small Devices, Tablets
+@media only screen and (max-width: 700px)
+    .daterangepicker
+        &.ltr.show-calendar.opensright
+            left: 117px !important
+        &.opensright
+            &:before, &:after
+                right: 33%
+                left: auto
+
+/* Extra Small Devices, Phones
+@media only screen and (max-width: 660px)
+    span.user-mail
+        display: none
+    img.user-image
+        position: relative
+        left: 0
+        top: 0
+        margin: 0
+    button.share
+        top: 50%
+        margin-top: -20px
+    .user
+        padding-right: 38px
+        padding-left: 0
+        margin-right: 0
+    aside.sidebar
+        width: 60px
+    main.main
+        padding-left: 90px
+    .block-head
+        margin-left: 25px
+    aside.sidebar
+        &:before, &:after
+            width: 60px
+    .popupp-user
+        top: 70px
+    .daterangepicker.ltr.show-calendar.opensright
+        left: 90px !important
+
+/* Custom, iPhone Retina
+@media only screen and (max-width: 625px)
+    .daterangepicker
+        &.ltr
+            &.show-calendar.opensright
+                width: 250px
+                left: 195px !important
+            .drp-calendar.left
+                border: 0
+        .drp-selected
+            display: block
+            margin-bottom: 15px
+            padding: 0
+        .drp-buttons
+            .btn
+                &.cancelBtn.btn
+                    margin-bottom: 15px
+                    margin-left: 0
+                &.applyBtn.btn
+                    margin-left: 0
+            text-align: center
+
+/* Extra Small Devices, Phones
+@media only screen and (max-width: 480px)
+    .right-head .block-head:nth-of-type(3)
+        display: none
+    img.logo-min
+        margin-right: 0
+        height: 24px
+    header
+        padding: 15px 0
+        position: fixed
+        top: 0
+        width: 100%
+        background: #fff
+        z-index: 999999
+    .right-head
+        height: auto
+    aside.sidebar
+        display: none
+    main.main
+        padding-left: 15px
+        padding-right: 15px
+        padding-top: 100px
+    a.hamburger.hamburger--slider
+        display: inline-block
+        padding: 0
+        padding-top: 11px
+        float: left
+        margin-right: 30px
+    .hamburger-inner
+        height: 2px
+        &:after, &:before
+            height: 2px
+    .logo
+        padding: 11px 0
+    footer.site-footer .col-md-6 .col-md-6
+        width: 100%
+    .ether, .hain
+        text-align: center
+        margin: 0
+    .item-dock-6
+        width: 100%
+        margin-bottom: 15px
+    .dock-file
+        .item-dock
+            &:nth-of-type(4)
+                width: 100%
+                padding-left: 0
+            &:nth-of-type(5)
+                position: absolute
+                right: 0
+                top: 30px
+        padding-right: 50px
+    .pagenavi
+        margin-top: 30px
+    .widefat
+        padding-bottom: 30px
+    .daterangepicker
+        &.ltr.show-calendar.opensright
+            left: 120px !important
+        &.opensright
+            &:before
+                right: 7%
+                left: auto
+            &:after
+                right: 7%
+    span.title-tablenav
+        line-height: initial
+        display: block
+        width: 100%
+    input.picker
+        margin-left: 0
+    .daterangepicker
+        &.ltr
+            &.show-calendar.opensright
+                left: 15px !important
+            .drp-calendar
+                &.left
+                    padding-left: 0
+                &.right
+                    padding-left: 0
+                    padding-right: 0
+        &.opensright
+            &:before, &:after
+                right: 19%
+
+/* Custom, iPhone Retina
+@media only screen and (max-width: 370px)
+    .logo
+        display: none
+
+/*==========  Mobile First Method  ==========
+
+/* Custom, iPhone Retina
+//@media only screen and (min-width: 320px)
+
+/* Extra Small Devices, Phones
+//@media only screen and (min-width: 480px)
+
+/* Small Devices, Tablets
+//@media only screen and (min-width: 768px)
+
+/* Medium Devices, Desktops
+//@media only screen and (min-width: 992px)
+    .mobile-item
+        display: none
+
+/* Large Devices, Wide Screens
+//@media only screen and (min-width: 1200px)

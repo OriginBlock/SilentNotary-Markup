@@ -1,0 +1,39 @@
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        title Личный кабинет SilentNotary
+        link(rel='stylesheet' href='/libs/bootstrap/bootstrap-grid-3.3.1.min.css')
+        link(rel='stylesheet' href='/libs/select/jquery.formstyler.css')
+        link(rel='stylesheet' href='/libs/select/jquery.formstyler.theme.css')
+        link(rel='stylesheet' href="/libs/datepicker/daterangepicker.css")
+        link(rel='stylesheet' href="/libs/fancybox/jquery.fancybox.min.css")
+        link(rel='stylesheet' href="/libs/mmenu/jquery.mmenu.all.css")
+        link(rel='stylesheet' href="/libs/mmenu/hamburgers.min.css")
+        link(rel='stylesheet' href='/common/css/style.css')
+        link(rel='stylesheet' href='/common/css/media.css')
+
+    body
+        .site
+            include includes/header
+
+            main.main(data-sticky-container="")
+                include includes/aside
+
+                block content
+
+            include includes/footer
+
+        include includes/popups
+
+        script(src="/common/js/jquery.js")
+        script(src="/libs/select/jquery.formstyler.min.js")
+        script(src="/libs/sticky/sticky.js")
+        script(src="/libs/datepicker/moment.min.js")
+        script(src="/libs/datepicker/moment.lang.ru.js")
+        script(src="/libs/datepicker/daterangepicker.js")
+        script(src="/libs/fancybox/jquery.fancybox.min.js")
+        script(src="/libs/mmenu/jquery.mmenu.all.js")
+        script(src="/common/js/home.js")
+        script(src="/common/js/common.js")

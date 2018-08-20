@@ -15,7 +15,7 @@ gulp.task('js', function () {
         '!' + cfg.src.root + '**/_*.js'
     ])
         .pipe(babel({
-            presets: ['env']
+            presets: ['env'],
         }))
         .pipe(gulp.dest(cfg.dest.root));
 });

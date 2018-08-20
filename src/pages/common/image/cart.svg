@@ -1,0 +1,30 @@
+
+<svg width="232px" height="139px" viewBox="0 0 357 158" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-70.1386689%" y1="55.5667222%" x2="91.852449%" y2="55.5667222%" id="linearGradient-1">
+            <stop stop-color="#40CAFE" offset="0%"></stop>
+            <stop stop-color="#1E9AFC" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="232" height="139"></rect>
+        <path d="M-21.5,152 C-13.6416309,128.666667 0.572961373,116.333333 21.1437768,115 C52,113 86.9699571,135 109.984979,135 C133,135 151.444206,108 182.242489,108 C202.774678,108 226.860515,120.666667 254.5,146 L254.5,158 L-21.5,158 L-21.5,152 Z" id="path-4"></path>
+        <path d="M-3,142 C37.1675331,120.666667 69.2614838,110 93.281852,110 C129.312404,110 153.087289,130 185.116172,130 C217.145055,130 238.883614,103 266.793262,103 C285.399694,103 307.968606,115.666667 334.5,141 L334.5,153 L-3,157 L-3,142 Z" id="path-6"></path>
+    </defs>
+    <g id="Page-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" transform="translate(22.000000, 0.000000)">
+            <mask id="mask-3" fill="white">
+                <use xlink:href="#path-2"></use>
+            </mask>
+            <use id="Mask" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+            <mask id="mask-5" fill="white">
+                <use xlink:href="#path-4"></use>
+            </mask>
+            <use id="Mask" fill="#FFFFFF" opacity="0.182366071" xlink:href="#path-4"></use>
+            <mask id="mask-7" fill="white">
+                <use xlink:href="#path-6"></use>
+            </mask>
+            <use id="Mask" fill="#FFFFFF" opacity="0.1" xlink:href="#path-6"></use>
+        </g>
+    </g>
+</svg>

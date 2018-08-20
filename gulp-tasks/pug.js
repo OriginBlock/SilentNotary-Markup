@@ -15,7 +15,8 @@ const data = {
 gulp.task('pug', function () {
     return gulp.src([
         cfg.src.root + 'pages/**/*.pug',
-        '!' + cfg.src.root + '**/_*.pug'
+        '!' + cfg.src.root + '**/_*.pug',
+        '!' + cfg.src.root + '**/includes'
     ])
         .pipe(plumber({
             errorHandler: notify.onError(function (error) {

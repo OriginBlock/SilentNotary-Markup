@@ -1,0 +1,69 @@
+#popupp
+    .check-balance
+        h3 Пополнить баланс
+        p.pop Пополнение происходит в автоматическом режиме через системы приема платежей
+        form(action="#")
+            ul
+                li
+                    label
+                        input(name="kassa" type="radio")
+                        span.flex
+                            img(src="/common/image/wm.svg" alt="")
+                li
+                    label
+                        input(name="kassa" type="radio")
+                        span.flex
+                            img(src="/common/image/robokassa.svg" alt="")
+                li
+                    label
+                        input(name="kassa" type="radio")
+                        span.flex
+                            img(src="/common/image/interkassa.svg" alt="")
+                li
+                    label
+                        input(name="kassa" type="radio")
+                        span.flex
+                            img(src="/common/image/coin.svg" alt="")
+                li
+                    label
+                        input(name="kassa" type="radio")
+                        span.flex
+                            img(src="/common/image/free-kassa.svg" alt="")
+            .clear
+            p Банковские карты (RUB), Яндекс.Деньги
+            .money-kassa
+                span $
+                input(min="0" type="number")
+                button Пополнить
+        | Valute as $cur) {
+        | if($cur->NumCode == 840) { $usd = str_replace(",", ".", $cur->Value); }
+        | if($cur->NumCode == 978) { $eur = str_replace(",", ".", $cur->Value); }
+        | if($cur->NumCode == 980) { $uah = str_replace(",", ".", $cur->Value); }
+        | }
+        | ?>
+        .valuta
+            span  руб.
+            span  руб.
+            span  руб.
+nav#my-menu
+    ul
+        li
+            a(href="/")
+                span.item-img
+                    img(src="/common/image/home.svg" alt="На главную")
+                span.item-menu Главная
+        li
+            a(href="/user/")
+                span.item-img
+                    img(src="/common/image/male.svg" alt="mail")
+                span.item-menu Профиль
+        li
+            a(href="/tranz/")
+                span.item-img
+                    img(src="/common/image/wallet.svg" alt="wallet")
+                span.item-menu История транзакций
+        li
+            a(href="/ticket/")
+                span.item-img
+                    img(src="/common/image/qesion.svg" alt="qesion")
+                span.item-menu Поддержка

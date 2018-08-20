@@ -1,0 +1,291 @@
+extends ../layout/layout
+
+block content
+    .title-page
+        h1 Загруженные документы
+        #ifno-content.info
+            button#info-dock
+                img(src="/common/image/info.svg" alt="Информация")
+            .info-content.info1
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, saepe maiores quaerat pariatur assumenda aliquam dicta sequi in beatae omnis at voluptate, voluptates sed ipsam velit iure, quibusdam rerum alias.
+    .clear
+    // Title end
+    // Content block
+    .content-block
+        .tablenav
+            .left-tablenav
+                .block-tablenav
+                    span.title-tablenav Показать по
+                    form.inline(action="#")
+                        select
+                            option 5
+                            option 10
+                            option 20
+                            option 30
+                .block-tablenav
+                    span.title-tablenav Показать период
+                    .block-picker
+                        input.picker(type="text" name="datefilter" value="")
+            .right-tablenav.edit-dock
+                span.title-tablenav Выбранные:
+                button
+                    img(src="/common/image/dock.svg" alt="")
+                    | Скачать
+                button
+                    img(src="/common/image/delet.svg" alt="")
+                    | Удалить
+        .clear
+        .widefat
+            .top-table
+                ul
+                    li.curent
+                        a(href="#")
+                            | Название
+                            img(src="/common/image/caret.svg" alt="Стрелка вниз")
+                    li.curent
+                        a(href="#")
+                            | Дата
+                            br
+                            |  загрузки
+                            img(src="/common/image/caret.svg" alt="Стрелка вниз")
+                    li
+                        a(href="#")
+                            | Срок
+                            br
+                            |  хранения
+                    li.curent
+                        a(href="#")
+                            | Размер
+                            img(src="/common/image/caret.svg" alt="Стрелка вниз")
+                    li
+                        a(href="#") Комментарий
+                    li
+                        a(href="#") Опции
+            .dock-file
+                label.checkbox
+                    input(type="checkbox")
+                    span
+                .item-dock-6
+                    .item-dock
+                        | Document.docx
+                    .item-dock
+                        span.date-dock 01.08.18
+                        span.time-dock 14:45
+                    .clear
+                    .item-dock-12
+                        .hash
+                            span Хеш:
+                            | bfjwkjlwkjrlfvldnakjh5iurhfahkd;flag
+                            |                        hjslkjdglkrjlgkejlktjglhekt
+                        .visin
+                            a(href="#") Смотреть в Explorer Ethereum
+                            a(href="#") Смотреть в Explorer Byteball
+                .item-dock
+                    span.date-dock 01.08.18
+                    span.time-dock 14:45
+                .item-dock
+                    span 80 кБ
+                .item-dock
+                    span.comment
+                        | Выписка из ЕГРП (ЕГРН) на квартиру, который подтверждает кто являеться собственником квартиры…
+                .item-dock
+                    .options
+                        button
+                            img(src="/common/image/delet.svg" alt="")
+                        button
+                            img(src="/common/image/dock.svg" alt="")
+                .clear
+                .mobile-item
+                    .item-dock-mobile
+                        span.title-mobile-item Дата загрузки:
+                        span.date-dock 01.08.18
+                        span.time-dock 14:45
+                    .item-dock-mobile
+                        span.title-mobile-item Срок хранения:
+                        span.date-dock 01.08.18
+                        span.time-dock 14:45
+                    .item-dock-mobile
+                        span.title-mobile-item Размер:
+                        span 80 кБ
+            .dock-file
+                label.checkbox
+                    input(type="checkbox")
+                    span
+                .item-dock-6
+                    .item-dock
+                        | Document.docx
+                    .item-dock
+                        span.date-dock 01.08.18
+                        span.time-dock 14:45
+                    .clear
+                    .item-dock-12
+                        .hash
+                            span Хеш:
+                            | bfjwkjlwkjrlfvldnakjh5iurhfahkd;flag
+                            |                        hjslkjdglkrjlgkejlktjglhekt
+                        .visin
+                            a(href="#") Смотреть в Explorer Ethereum
+                            a(href="#") Смотреть в Explorer Byteball
+                .item-dock
+                    span.date-dock 01.08.18
+                    span.time-dock 14:45
+                .item-dock
+                    span 80 кБ
+                .item-dock
+                    span.comment
+                        | Выписка из ЕГРП (ЕГРН) на квартиру, который подтверждает кто являеться собственником квартиры…
+                .item-dock
+                    .options
+                        button
+                            img(src="/common/image/delet.svg" alt="")
+                        button
+                            img(src="/common/image/dock.svg" alt="")
+                .clear
+                .mobile-item
+                    .item-dock-mobile
+                        span.title-mobile-item Дата загрузки:
+                        span.date-dock 01.08.18
+                        span.time-dock 14:45
+                    .item-dock-mobile
+                        span.title-mobile-item Срок хранения:
+                        span.date-dock 01.08.18
+                        span.time-dock 14:45
+                    .item-dock-mobile
+                        span.title-mobile-item Размер:
+                        span 80 кБ
+            .dock-file
+                label.checkbox
+                    input(type="checkbox")
+                    span
+                .item-dock-6
+                    .item-dock
+                        | Document.docx
+                    .item-dock
+                        span.date-dock 01.08.18
+                        span.time-dock 14:45
+                    .clear
+                    .item-dock-12
+                        .hash
+                            span Хеш:
+                            | bfjwkjlwkjrlfvldnakjh5iurhfahkd;flag
+                            |                        hjslkjdglkrjlgkejlktjglhekt
+                        .visin
+                            a(href="#") Смотреть в Explorer Ethereum
+                            a(href="#") Смотреть в Explorer Byteball
+                .item-dock
+                    span.date-dock 01.08.18
+                    span.time-dock 14:45
+                .item-dock
+                    span 80 кБ
+                .item-dock
+                    span.comment
+                        | Выписка из ЕГРП (ЕГРН) на квартиру, который подтверждает кто являеться собственником квартиры…
+                .item-dock
+                    .options
+                        button
+                            img(src="/common/image/delet.svg" alt="")
+                        button
+                            img(src="/common/image/dock.svg" alt="")
+                .clear
+                .mobile-item
+                    .item-dock-mobile
+                        span.title-mobile-item Дата загрузки:
+                        span.date-dock 01.08.18
+                        span.time-dock 14:45
+                    .item-dock-mobile
+                        span.title-mobile-item Срок хранения:
+                        span.date-dock 01.08.18
+                        span.time-dock 14:45
+                    .item-dock-mobile
+                        span.title-mobile-item Размер:
+                        span 80 кБ
+            .dock-file
+                label.checkbox
+                    input(type="checkbox")
+                    span
+                .item-dock-6
+                    .item-dock
+                        | Document.docx
+                    .item-dock
+                        span.date-dock 01.08.18
+                        span.time-dock 14:45
+                    .clear
+                    .item-dock-12
+                        .hash
+                            span Хеш:
+                            | bfjwkjlwkjrlfvldnakjh5iurhfahkd;flag
+                            |                        hjslkjdglkrjlgkejlktjglhekt
+                        .visin
+                            a(href="#") Смотреть в Explorer Ethereum
+                            a(href="#") Смотреть в Explorer Byteball
+                .item-dock
+                    span.date-dock 01.08.18
+                    span.time-dock 14:45
+                .item-dock
+                    span 80 кБ
+                .item-dock
+                    span.comment
+                        | Выписка из ЕГРП (ЕГРН) на квартиру, который подтверждает кто являеться собственником квартиры…
+                .item-dock
+                    .options
+                        button
+                            img(src="/common/image/delet.svg" alt="")
+                        button
+                            img(src="/common/image/dock.svg" alt="")
+                .clear
+                .mobile-item
+                    .item-dock-mobile
+                        span.title-mobile-item Дата загрузки:
+                        span.date-dock 01.08.18
+                        span.time-dock 14:45
+                    .item-dock-mobile
+                        span.title-mobile-item Срок хранения:
+                        span.date-dock 01.08.18
+                        span.time-dock 14:45
+                    .item-dock-mobile
+                        span.title-mobile-item Размер:
+                        span 80 кБ
+            .pagenavi
+                span.prev.no-pagenavi
+                    img(src="/common/image/arrow-point.svg" alt="")
+                span.current 1
+                a(href="#") 2
+                a(href="#") 3
+                a(href="#") 4
+                span.dott ...
+                a(href="#") 15
+                a.next(href="#")
+                    img(src="/common/image/arrow-point.svg" alt="")
+    // Content block end
+    // Block right
+    .block-right
+        .block-padding
+            .balance
+                .head-balance
+                    h3 Баланс счета
+                    #info-balance.info
+                        button#info-dock2
+                            img(src="/common/image/info-white.svg" alt="Информация")
+                        .info-content.info2
+                            span
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, saepe maiores quaerat pariatur assumenda aliquam dicta sequi in beatae omnis at voluptate, voluptates sed ipsam velit iure, quibusdam rerum alias.
+                .block-balance
+                    span.price - $15
+                    .info-dock-balance
+                        span.date 25.07.2018
+                        span.title-dock Document.docx
+                .block-balance
+                    span.price - $450
+                    .info-dock-balance
+                        span.date 25.07.2018
+                        span.title-dock Document.docx
+                .text-center
+                    a.look.look-white(href="#") Смотреть все
+            .download-file
+                span
+                    | Перетащите файлы сюда
+                    br
+                    |  или
+                .text-center
+                    a.look(href="#") Выберите с диска
+    // Block right end

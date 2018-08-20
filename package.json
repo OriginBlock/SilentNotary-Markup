@@ -1,5 +1,5 @@
 {
-    "name": "nanny-backoffice-templates",
+    "name": "sn-templates",
     "version": "1.0.0",
     "description": "page proofs for backoffice",
     "main": "gulpfile.js",
@@ -9,7 +9,7 @@
         "deploy": "gulp deploy",
         "build:deploy": "gulp build:deploy"
     },
-    "author": "Natkor Team",
+    "author": "SN Team",
     "license": "ISC",
     "dependencies": {
         "babel-preset-env": "^1.6.1",

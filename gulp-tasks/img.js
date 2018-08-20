@@ -19,3 +19,11 @@ gulp.task('assets', function () {
         ])
         .pipe(gulp.dest(cfg.dest.root));
 });
+
+gulp.task('libs', function () {
+    return gulp
+        .src([
+            cfg.src.root + 'libs/**'
+        ])
+        .pipe(gulp.dest(cfg.dest.root + 'libs'));
+});

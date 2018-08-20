@@ -1,0 +1,45 @@
+
+<svg width="132px" height="32px" viewBox="0 0 132 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#123AFF" offset="1%"></stop>
+            <stop stop-color="#03FFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="280%" x2="100%" y2="280%" id="linearGradient-2">
+            <stop stop-color="#123AFF" offset="1%"></stop>
+            <stop stop-color="#03FFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="28.2142857%" y1="-38%" x2="71.7857143%" y2="138%" id="linearGradient-3">
+            <stop stop-color="#0060CC" offset="0%"></stop>
+            <stop stop-color="#006BD0" offset="1%"></stop>
+            <stop stop-color="#008ADD" offset="4%"></stop>
+            <stop stop-color="#00A6E8" offset="7%"></stop>
+            <stop stop-color="#00BCF0" offset="11%"></stop>
+            <stop stop-color="#00CDF7" offset="15%"></stop>
+            <stop stop-color="#00D8FC" offset="21%"></stop>
+            <stop stop-color="#00DFFE" offset="29%"></stop>
+            <stop stop-color="#00E1FF" offset="50%"></stop>
+            <stop stop-color="#00DFFE" offset="71%"></stop>
+            <stop stop-color="#00D8FC" offset="79%"></stop>
+            <stop stop-color="#00CDF7" offset="85%"></stop>
+            <stop stop-color="#00BCF0" offset="89%"></stop>
+            <stop stop-color="#00A6E8" offset="93%"></stop>
+            <stop stop-color="#008ADD" offset="96%"></stop>
+            <stop stop-color="#006BD0" offset="99%"></stop>
+            <stop stop-color="#0060CC" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Файлы" transform="translate(-22.000000, -33.000000)" fill-rule="nonzero">
+            <g id="меню" transform="translate(22.000000, 29.000000)">
+                <g id="silentnotary" transform="translate(0.000000, 4.000000)">
+                    <rect id="Rectangle-path" fill="url(#linearGradient-1)" x="0.5" y="22" width="80" height="10"></rect>
+                    <rect id="Rectangle-path" fill="url(#linearGradient-2)" x="52.5" y="0" width="80" height="10"></rect>
+                    <polygon id="Shape" fill="url(#linearGradient-3)" points="52.5 10 70.5 22 80.5 22 62.5 10"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

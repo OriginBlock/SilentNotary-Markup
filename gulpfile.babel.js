@@ -21,13 +21,13 @@ gulp.task('copy:deploy', function () {
 });
 
 gulp.task('build', ['clean'], function (callback) {
-    run(['js', 'pug', 'sass', 'assets'], function () {
+    run(['js', 'pug', 'sass', 'assets', 'libs'], function () {
         callback();
     });
 });
 
 gulp.task('build:deploy', ['clean:deploy', 'clean'], function (callback) {
-    run(['js:deploy', 'pug', 'sass:deploy', 'assets'], function () {
+    run(['js:deploy', 'pug', 'sass:deploy', 'assets', 'libs'], function () {
         callback();
     });
 });
