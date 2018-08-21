@@ -1,0 +1,47 @@
+extends ../layout/layout
+
+block content
+    .title-page
+        h1 Профиль
+    .clear
+    // Title end
+    // Content block
+    .content-block
+        .clear
+        .widefat
+            .user-page
+                .row
+                    .col-md-5
+                        h2 Персональные данные
+                        form(action="#")
+                            span.title-input.fio Имя и Фамилия
+                            input(type="text" value="John Snow")
+                            span.title-input E-mail
+                            input(type="text" value="John Snow")
+                            span.title-input Facebook
+                            input.facebook(type="text" value="https://www.facebook.com")
+                            span.title-input Telegram
+                            input.telegram(type="text" value="https://www.telegram.com")
+                            span.title-input Slack
+                            input.slack(type="text" value="Slack messenger")
+                            .clear
+                            button.submit(type="submit") Сохранить
+                    .col-md-6
+                        h2 Информация об аккаунте
+                        .info-user
+                            p
+                                | Баланс
+                                span 450$
+                            p
+                                | Ежемесячная плата
+                                span 0.6$
+                            p
+                                | Загружено файлов
+                                span 23
+                            p
+                                | Общий вес
+                                span 777 кБ
+                button.delete Удалить аккаунт
+
+block scripts
+    script(src="js/user.js")

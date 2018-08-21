@@ -6,7 +6,7 @@ export default {
         root: './dist/'
     },
     deploy: {
-        root: '../Backoffice/Presentation/Backoffice.Web/wwwroot/bundles'
+        root: './deploy/'
     },
     srvPort: '7777'
 };

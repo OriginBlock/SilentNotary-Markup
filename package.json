@@ -7,7 +7,8 @@
         "start": "gulp",
         "dev": "gulp dev",
         "deploy": "gulp deploy",
-        "build:deploy": "gulp build:deploy"
+        "build:deploy": "gulp build:deploy",
+        "copy": "gulp copy:deploy"
     },
     "author": "SN Team",
     "license": "ISC",
