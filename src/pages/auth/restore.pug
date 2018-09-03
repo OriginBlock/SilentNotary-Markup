@@ -1,0 +1,14 @@
+extends ../layout/layout
+
+block content
+    .clear
+    .form_login
+        .login_title Забыли пароль?
+        .login_body
+            | Введите ваш емейл, нажмите «Восстановить»
+            br
+            |  и мы отправим вам ссылку для восстановления.
+        .login_item Емейл
+        input#exampleInputEmail1.form-control(type="email" aria-describedby="emailHelp" placeholder="email@example.com")
+        a.buttom_login(href="#") Восстановить
+        a.login_item_bot(href="#") Не забудьте проверить папку со спамом

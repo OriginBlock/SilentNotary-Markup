@@ -1,0 +1,15 @@
+extends ../layout/layout
+
+block content
+    .clear
+    .form_login
+        .login_title.title_color Регистрация
+        .login_item Емейл
+        input#exampleInputEmail1.form-control(type="email" aria-describedby="emailHelp" placeholder="email@example.com")
+        .login_item Пароль
+        input#exampleInputEmail2.form-control(type="password" aria-describedby="emailHelp" placeholder="")
+        .login_item Повторите пароль
+        input#exampleInputEmail3.form-control(type="password" aria-describedby="emailHelp" placeholder="")
+        a.buttom_login2(href="#") Зарегистрироваться
+        a.login_item_bot3(href="#")
+            | Нажимая кнопку, вы принимаете Положение и Согласие на обработку персональных данных

@@ -1,0 +1,17 @@
+extends ../layout/layout
+
+block content
+    .clear
+    .form_login
+        .login_title.title_color Вход
+        .login_item Емейл
+        input#exampleInputEmail1.form-control(type="email" aria-describedby="emailHelp" placeholder="email@example.com")
+        .login_item Повторите пароль
+        input#exampleInputEmail3.form-control(type="password" aria-describedby="emailHelp" placeholder="")
+        a.buttom_login2(href="#") Войти
+        a.login_item_bot2(href="login.html")
+            | Ещё нет аккаунта?
+            span Зарегистрируйте
+        a.login_item_bot3(href="index.html")
+            | Забыли пароль?
+            span Восстановите
